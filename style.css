@@ -1,0 +1,145 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+}
+
+
+html {
+    font-family: 'Overpass', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+
+.card {
+    width: 375px;
+    height: 375px;
+    background-image: radial-gradient(farthest-corner at 50% 0%, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.text h3 {
+    color: hsl(0, 0%, 100%);
+}
+
+div.text p {
+    color: hsl(217, 12%, 63%);
+}
+
+.starelem {
+    background-color: hsl(213, 19%, 18%);
+    width: 50px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+
+#ratemodal {
+    height: 100vh;
+    width: 100vw;
+}
+
+.ratingbtns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(213, 19%, 18%);
+    border: none;
+    color: hsl(217, 12%, 63%);
+}
+
+dialog {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+
+.clicked {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+
+#result {
+    display: flex;
+    justify-content: center;
+}
+
+#result p {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.tyil {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.text.ty {
+    text-align: center;
+}
+
+
+dialog {
+    margin: auto;
+}
+
+
+.submitbtn {
+    width: 100%;
+    height: 50px;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+
+.submitbtn:hover {
+    background-color: white;
+    color: var(--orange);
+}
+
+
+.text > * {
+    padding-top: 10px;
+}
